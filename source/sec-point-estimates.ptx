@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-point-estimates" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Point Estimates</title>
+
+  <introduction>
+
+<definition xml:id="def-point-estimate">
+    <statement>
+        <p>
+            A <em>point estimate</em> is a single numerical value that best estimates the population parameter of interest.  
+        </p>
+        <p>
+            The most common point estimates are the sample mean, <m>\overline{x}</m>, and the sample proportion, <m>\overline{p}</m>.
+        </p>
+    </statement>
+</definition>
+
+
+</introduction>
+
+<p>
+    The advantage of a point estimate is that it is easy to calculate and easy to understand.  The disadvantage is that it doesn't provide any information about the accuracy of the estimate.  For this reason, statisticians prefer an interval estimate, a range of values used to estimate the parameter.  This estimate <em>may</em> or <em>may not</em> contain the value of the parameter being estimated.
+</p>
+
+
+<p>
+    For example, let's say we work for a company with 500 employees, and we want to understand what proportion of employees is happy with their health benefits.  We sample 20 employees, and in that sample, <m>65\%</m> of the employees are happy with their health benefits.  It is probably not the case that exactly <m>65\%</m> of <em>all</em> employees are happy with their health benefits.  However, we would like to use that point estimate of <m>65\%</m> to estimate the true proportion of <em>all</em> employees that is happy with their health benefits.
+</p>
+
+</section>
+
+

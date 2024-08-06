@@ -1,0 +1,1585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-normal-distribution" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Normal Distribution</title>
+
+  <introduction>
+
+    </introduction>
+
+
+    <exercise>
+        <title>Continuous Probability Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Match each probability distribution with the situation in which it is useful.
+        </p>
+        </statement>
+    
+     <matches>
+    
+    <match>
+        <premise>
+            Normal Distribution
+        </premise>
+        <response>
+            <p>
+                Useful when data tends to fall in the center and extreme values are rare
+                </p>
+        </response>
+    </match>
+    
+    <match>
+        <premise>
+            exponential distribution
+        </premise>
+        <response>
+            <p>
+                Useful when low values for data occur often and high values are rare
+                </p>
+        </response>
+    </match>
+    
+    <match>
+      <premise>
+          uniform distribution
+      </premise>
+      <response>
+          <p>
+              Useful when data of all values have an equal chance of occurring
+              </p>
+      </response>
+    </match>
+    
+    </matches>
+    
+    </exercise>
+    
+
+
+
+
+  <p> The mathematical expression that describes the shape of the normal probability distribution is called the normal probability density function:
+  <me>
+f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
+    </me>
+    Despite the complexity of this function, there are only two parameters that completely deter- mine the shape of the distribution: the mean, <m>\mu</m>, and the standard deviation, <m>\sigma</m>. Let’s take a closer look at how they impact the distribution. (Don’t worry---we won’t be using this formula to compute probabilities. We have other tools!)
+     </p>
+
+
+<question>
+    <statement>
+<p>
+    How does changing the standard deviation (<m>\sigma</m>) and the mean (<m>\mu</m>) change the curve?
+    <figure>
+        <caption>Graph of Normal Distribution powered by Desmos</caption>
+        <interactive xml:id="desmos-normal" desmos="jxzs8fz9qr" aspect="4:3" />
+      </figure>
+</p>
+    </statement>
+
+    <answer>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <m>\sigma:</m> controls the <q>spread</q> of the curve.  Larger <m>\sigma</m> results in a flatter, more spread out curve
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>\mu:</m> controls the location of the center.  Larger <m>\mu</m> shifts the <q>hill</q> of the curve to the right
+                    </p>
+                </li>
+            </ul>
+        </p>
+    </answer>
+</question>
+
+
+    <subsection xml:id="subsection-characteristics-of-normal-distn">
+  <title>Characteristics of the Normal Probability Distribution:</title>
+        <p>
+<ol>
+    <li>
+        <p>
+            The distribution is bell-shaped and symmetric around the mean.
+        </p>
+    </li>
+    <li>
+        <p>
+            Because the shape is symmetrical, the mean and median are equal and located at the center of the distribution.
+        </p>
+    </li>
+    <li>
+        <p>
+            Random variables around the mean, where the curve is the tallest have a higher probability of occurring than values toward the end of the distribution.
+        </p>
+    </li>
+    <li>
+        <p>
+            The total area under the curve is <m>1</m>.  Since the distribution is symmetric, the area to the left of the mean equals <m>0.5</m> as does the area to the right of the mean
+        </p>
+    </li>
+    <li>
+        <p>
+            No matter how far in either direction the distribution curve extends, it never touches the horizontal axis -- but it gets increasingly closer.
+        </p>
+    </li>
+</ol>
+     </p>
+    </subsection>
+
+
+    <subsection xml:id="subsection-examples-of-normal-distn">
+        <title>Examples of Normal Probability Distributions:</title>
+              <p>
+There are many examples of random variables that are normally distributed in many different real-world settings!  Here are a few examples of random variables that are normally distributed or that could be in certain situations:
+<ul>
+    <li>
+        <p>
+            Shoe sizes
+        </p>
+    </li>
+    <li>
+        <p>
+            blood pressure
+        </p>
+    </li>
+    <li>
+        <p>
+            ACT scores
+        </p>
+    </li>
+    <li>
+        <p>
+            birth weight of babies
+        </p>
+    </li>
+    <li>
+        <p>
+            salaries at a particular workplace
+        </p>
+    </li>
+    <li>
+        <p>
+            length of movies
+        </p>
+    </li>
+</ul>
+              </p>
+
+
+             
+              </subsection>
+
+
+<subsection xml:id="subsection-standard-normal-distn">
+   <title>The Standard Normal Distribution:</title>
+      <p>
+        Recall that the <m>z</m>-score of a value, <m>x</m>, describes the number of standard deviations that the value <m>x</m> is from the mean of its distribution:
+        <me>z=\frac{x-\mu}{\sigma}</me>
+      </p>
+
+        <exercise label="multiple choice1">
+            
+            <statement>
+                <p>
+                    Values of <m>x</m> that are less than the mean have _______ <m>z</m>-scores
+                </p>
+                </statement>
+                <choices>
+                    <choice>
+                        <statement>
+                            <p>
+                                postive
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                negative
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>
+                                zero
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                </choices>
+            </exercise>
+
+            <exercise label="multiple choice2">
+            
+                <statement>
+                <p>
+                    Values of <m>x</m> that are more than the mean have _______ <m>z</m>-scores
+                </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                positive
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>
+                                negative
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice>
+                        <statement>
+                            <p>
+                                zero
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                </choices>
+                </exercise>
+            
+                
+                <exercise label="multiple choice3">
+                    <statement>
+                        <p>
+                        The <m>z</m>-score for the mean equals ________ 
+                        </p>
+                    </statement>
+                    <choices>
+                        <choice correct="yes">
+                            <statement>
+                                <p>
+                                    <m>0</m>
+                                </p>
+                            </statement>
+                        </choice>
+                        <choice>
+                            <statement>
+                                <p>
+                                    <m>-1</m>
+                                </p>
+                            </statement>
+                        </choice>
+                        <choice>
+                            <statement>
+                                <p>
+                                    <m>1</m>
+                                </p>
+                            </statement>
+                        </choice>
+                        <choice>
+                            <statement>
+                                <p>
+                                    <m>0.5</m>
+                                </p>
+                            </statement>
+                        </choice>
+                    </choices>
+            
+        </exercise>
+
+        
+        <exercise>
+           <statement>
+            A coffee shop wants to understand the distribution of amounts that their customers are spending per order.  They find that the average amount a customer spends per order is <m>\$ 7.50</m>, and the standard deviation is <m>\$1.25</m>.  If we assume that the amounts spent per order are normally distributed, and Rey comes in and spends <m>\$10.00</m>, what is the <m>z</m>-score for Rey's order?
+        </statement>
+        <answer>
+            <p>
+                <me> z=\frac{10.00-7.50}{1.25} = 2 </me>
+            </p>
+        </answer>
+        </exercise>
+    
+
+
+        <definition xml:id="def-standard-normal">
+            <statement>
+                <p>
+                    When the original random variable, <m>x</m>, follows a normal distribution, <m>z</m>-scores also follow a normal distribution with <m>\mu=0</m>, <m>\sigma=1</m>.  It is called the <em>standard normal distribution</em>.
+                </p>
+            </statement>
+        </definition>
+
+
+        <figure>
+            <caption>Graph of Standard Normal Distribution powered by Desmos</caption>
+            <interactive xml:id="desmos-standard-normal" desmos="elacje4bcl" aspect="4:3" />
+          </figure>
+
+        </subsection>
+
+
+        <subsection xml:id="subsection-calculating-probabilities-normal">
+            <title>Calculating Probabilities for Normal Distributions:</title>
+
+          <p>
+            The standard normal distribution allows us to calculate probabilities for any normal distribution since we can standardize it with <m>z</m>-scores.   The tables at this link (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) provide you with the cumulative area to the LEFT of the <m>z</m>-score.
+            </p>
+            
+            <p>
+            We can also use Excel to calculate the cumulative area to the left of the <m>z</m>-score by typing 
+            <me>=NORM.S.DIST(x,TRUE)</me>
+          </p>
+
+          <p>
+(<em>Note:</em>  We can type <q>1</q> instead of <q>TRUE</q> in this formula in Excel.)
+          </p>
+
+          <p>
+          <example>
+            <statement>
+                <p>
+            Find the probability <m>P(Z\leq -1.3)</m> for a standard normal distribution
+                </p>
+            </statement>
+
+            <answer>
+                <p>
+                    In Excel:  <me>=NORM.S.DIST(-1.3,1)\approx 0.0968 </me>
+                </p>
+            </answer>
+          </example>
+        </p>
+
+          <p>
+            So how do we use the table or the Excel formula to find any probability for a normal distribution?
+          </p>
+
+          <p>
+            There are 3 basic types of problems:
+            <ol>
+                <li>
+                    <p>
+                        To the left of any <m>z</m>-score:  Look up the <m>z</m>-score in the table (or calculate it in Excel) and use the area given.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        To the right of any <m>z</m>-score:  Look up the <m>z</m>-score in the table (or calculate it in Excel) subtract the area from 1.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Between any two <m>z</m>-scores:  Look up both <m>z</m>-scores in the table (or calculate them in Excel) and subtract the smaller area from the larger area.
+                    </p>
+                </li>
+            </ol>
+          </p>
+
+
+          <example>
+            <introduction>
+                <p>
+                    Find the following probabilities for a standard normal distribution:
+                </p>
+            </introduction>
+                <task>
+                    <statement>
+                        <p>
+                            <m>P(Z\lt-0.5)</m>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p> In Excel:
+                            <me> = NORM.S.DIST(-0.5,TRUE) \approx 0.3085 </me>
+                        </p>
+                    </answer>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            <m>P(Z\gt 2.1)</m>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p> In Excel:
+                            <me> = 1-NORM.S.DIST(2.1,TRUE)\approx 0.0179 </me>
+                        </p>
+                    </answer>
+                </task>
+                <task>
+                    <statement>
+                        <p>
+                            <m>P(0.2\leq Z\leq 2.7)</m>
+                        </p>
+                    </statement>
+                    <answer>
+                        <p> In Excel:
+                            <me> = NORM.S.DIST(2.7,TRUE) - NORM.S.DIST(0.2,TRUE) \approx 0.4173 </me>
+                        </p>
+                    </answer>
+                </task>
+          </example>
+
+
+          <figure xml:id="figure-geogebra-normal-probability">
+            <caption>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</caption>
+            <interactive xml:id="geogebra-normal" geogebra="KzkYq4Bt" aspect="9:5" />
+          </figure>
+        
+
+        </subsection>
+
+
+        <p>
+            We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution.  There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. 
+             (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)
+            <ul>
+                <li>
+                    <p>
+                        <m>NORM.DIST(x,\text{mean},\text{standard deviation},\text{cumulative})</m>:  applies to problems involving a normal distribution with a specified mean and standard deviation
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <m>NORM.S.DIST(x,\text{cumulative})</m>:  applies to problems involving the standard normal distribution (<m>\mu=0\text{ and }\sigma=1</m>)
+                    </p>
+                </li>
+            </ul>
+            (As we've seen before, cumulative<m>=TRUE\text{ or }FALSE</m>.)
+          </p>
+
+          
+
+          <exercise>
+            <introduction>
+              <p> Suppose the average height of 5 year old girls is normally distributed with mean <m>108.32</m> cm and standard deviation <m>5.6</m> cm. Find the following: </p>
+            </introduction>
+              <task>
+                <statement>
+                  <p> Find the probability that a randomly selected 5 year old girl's height is is at least <m>97.66</m> cm. </p>
+                </statement>
+                <answer>
+                  <p> <m>P(X\geq 97.66)\approx 0.9715169885897529</m>. </p>
+                </answer>
+              </task>
+              <task>
+                <statement>
+                  <p> Find the probability that a randomly selected 5 year old girl's height is between <m>107.22</m> and <m>109.94</m> cm. </p>
+                </statement>
+                <answer>
+                  <p> <m>P(107.22\lt X\lt 109.94)\approx 0.19168126069053149</m>. </p>
+                </answer>
+              </task>
+          </exercise>
+
+
+          <activity>
+            <p>
+                We're going to do a matching activity in class to practice working with these formulas to calculate probabilities for normal distributions.  (The next few exercises include online versions of part of this activity.)
+            </p>
+            <answer>
+                <p>
+                    Here are the solutions to the in-class activity:
+                    <ul>
+                        <li>
+                            <p>
+                                1, L, @
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                2, I, <m>\infty</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                3,A,!
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                4,F,<m>\square</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                5,B,<m>\triangle</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                6,Q,<m>\heartsuit</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                7,T,<m>\clubsuit</m>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                8,C,<m>\Rightarrow</m>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </answer>
+          </activity>
+
+
+
+          <exercise>
+            <title>Normal Distribution Practice Activity</title>
+            
+            <task>
+                <statement>
+                    <p> A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is more than 40?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                1-NORM.DIST(40,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(40,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(40,135,22,0)
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+    
+            <task>
+                <statement>
+                    <p> A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is less than 90?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                NORM.DIST(90,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               1- NORM.DIST(90,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(90,135,22,0)
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+
+
+            <task>
+                <statement>
+                    <p> A random variable follows the normal probability distribution with a mean of 135 and a standard deviation of 22.  What is the probability that a randomly selected value is between 120 and 180?
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(2.05,1)-NORM.S.DIST(0.68,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.DIST(2.05,135,22,1)-NORM.DIST(0.68,135,22,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(0.68,1)-NORM.S.DIST(2.05,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                2.01\cdotNORM.S.DIST(0.68,1)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(2.05,0)-NORM.S.DIST(0.68,0)
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                NORM.S.DIST(180,0)-NORM.S.DIST(120,0)
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+            
+          </exercise> 
+
+
+          
+
+
+          
+
+          <exercise>
+            <title>Normal Distribution Practice Activity</title>
+            
+            <task>
+                <statement>
+                    <p>
+                        Find the probability for the standard normal distribution:
+                        
+                            <me>P(Z\lt 2.35)</me>
+                          
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>1-NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+
+
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                      <me>P(Z\gt 2.35)</me>
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>1-NORM.S.DIST(2.35,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(2.35,FALSE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                
+                </choices>
+            </task>
+
+
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                      <me>P(-0.86\leq Z\leq 1.76)</me>
+                    </p>
+                </statement>
+
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(1.76,TRUE)-NORM.S.DIST(-0.86,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(1.76,0)-NORM.S.DIST(-0.86,0)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(-0.86,TRUE)-NORM.S.DIST(1.76,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                
+                </choices>
+            </task>
+            
+          </exercise> 
+
+
+       
+
+
+
+
+
+          <exercise>
+            <title>Normal Distribution Practice Activity</title>
+
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                      <me>P(Z\leq 1.50)</me>
+                    </p>
+                </statement>
+                <choices>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                                <m>NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1.5-NORM.S.DIST(1,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(1.5,0)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                </choices>
+            </task>
+
+                        
+            <task>
+                <statement>
+                    <p> Find the probability for a standard normal distribution:
+                    </p>
+                    <p>
+                        <me>P(Z\geq 1.50)</me>
+                      </p>
+                </statement>
+                <choices>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="yes">
+                        <statement>
+                            <p>
+                               <m> 1-NORM.S.DIST(1.5,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> 1.5-NORM.S.DIST(1,TRUE)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    <choice correct="no">
+                        <statement>
+                            <p>
+                               <m> NORM.S.DIST(1.5,0)</m>
+                            </p>
+                        </statement>
+                    </choice>
+                    
+                
+                </choices>
+            </task>
+            </exercise>
+
+          
+
+
+
+
+<!--  <exercise label="matching1">
+    <title>Normal Distribution Matching Problem</title>
+    <statement>
+    <p>
+        Match each probability with the Excel formula we would use to calculate it.
+    </p>
+    </statement>
+
+    <matches>
+
+    <match>
+        <premise>
+            <p>
+            A random variable follows the normal probability distribution with a mean of
+            135 and a standard deviation of 22. What is the probability that a randomly selected value is between 120 and 180?
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            A random variable follows the normal probability distribution with a mean of
+            135 and a standard deviation of 22. What is the probability that a randomly selected value is more than 40?
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.DIST(40,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    </matches>
+    </exercise>
+
+
+    <exercise label="matching2">
+        <title>Normal Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Match each probability with the Excel formula we would use to calculate it.
+        </p>
+        </statement>
+    
+        <matches>
+
+    <match>
+        <premise>
+            <p>
+            A random variable follows the normal probability distribution with a mean of
+            135 and a standard deviation of 22. What is the probability that a randomly selected value is less than 90?
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.DIST(90,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(Z \lt 2.35)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(2.35,TRUE)
+            </p>
+        </response>
+    </match>
+
+</matches>
+
+</exercise>-->
+
+
+<!--<exercise label="matching3">
+        <title>Normal Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Match each probability with the Excel formula we would use to calculate it.
+        </p>
+        </statement>
+    
+     <matches>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(Z \gt 2.35)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.S.DIST(2.35,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(-0.86\leq Z\leq 1.76)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(1.76,1)- NORM.S.DIST(-0.86,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution: <m>P(Z\leq 1.50)</m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            Find the probability for a standard normal distribution:
+            <m>
+                P(Z\geq 1.50)
+            </m>
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    </matches>
+
+</exercise>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<figure xml:id="image-normal-matching"/>
+
+   <figure xml:id="image-normal-matching">
+    <caption>Images for <xref ref="ex-NormalImageMatching"/></caption>
+    <sidebyside>
+        <figure>
+            <caption>A</caption>
+            <image width="50%" xml:id="fig-A">
+                <latex-image >
+                    \begin{tikzpicture}
+                    \begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+                    
+                    \addplot {\gauss{135}{22}};
+                    
+                    \addplot [fill=cyan!30, draw=none, domain=120:180] {\gauss{135}{22}} \closedcycle; 
+                    \end{axis}
+                    \end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+        <figure>
+            <caption>B</caption>
+            <image width="50%" xml:id="fig-B">
+              
+                <latex-image >
+                    \begin{tikzpicture}
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=35:235]
+
+\addplot {\gauss{135}{22}};
+
+\addplot [fill=cyan!30, draw=none, domain=40:220] {\gauss{135}{22}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+        <figure>
+            <caption>C</caption>
+            <image width="50%" xml:id="fig-C">
+              
+                <latex-image >
+                    \begin{tikzpicture}
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=50:220]
+
+\addplot {\gauss{135}{22}};
+
+\addplot [fill=cyan!30, draw=none, domain=50:90] {\gauss{135}{22}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+        
+    </sidebyside>
+</figure> -->
+
+
+
+<!--
+
+<figure xml:id="image-normal-matching-2">
+    <caption>Images for <xref ref="matching5"/></caption>
+    <sidebyside>
+
+        <figure>
+            <caption>D</caption>
+            <image width="50%" xml:id="fig-D">
+              
+                <latex-image >
+                    \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=-4:4]
+
+\addplot {\gauss{0}{1}};
+
+\addplot [fill=cyan!30, draw=none, domain=-4:2.35] {\gauss{0}{1}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+
+        <figure>
+            <caption>E</caption>
+            <image width="50%" xml:id="fig-E">
+              
+                <latex-image >
+                    \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=-4:4]
+
+\addplot {\gauss{0}{1}};
+
+\addplot [fill=cyan!30, draw=none, domain=2.35:4] {\gauss{0}{1}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+
+
+        <figure>
+            <caption>F</caption>
+            <image width="50%" xml:id="fig-F">
+              
+                <latex-image >
+                    \begin{tikzpicture}[scale=.6]
+\begin{axis}[every axis plot post/.append style={ mark=none,samples=50,smooth},domain=-4:4]
+
+\addplot {\gauss{0}{1}};
+
+\addplot [fill=cyan!30, draw=none, domain=2.35:4] {\gauss{0}{1}} \closedcycle; 
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            
+              </image>
+        </figure>
+
+
+    </sidebyside>
+</figure>
+
+
+-->
+
+
+<!--<exercise xml:id="ex-NormalImageMatching">
+    <title>Normal Distribution Matching Problem</title>
+    <statement>
+    <p>
+        Match the images in <xref ref="image-normal-matching"/> with the probability that is shown in the image
+    </p>
+    </statement>
+
+    <matches>
+
+    <match>
+        <premise>
+        <p>
+            A
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(2.05,1)-NORM.S.DIST(- 0.68,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            B
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.DIST(40,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            C
+            </p>
+        </premise>
+        <response>
+            <p>
+            NORM.DIST(90,135,22,1)
+            </p>
+        </response>
+    </match>
+
+    
+
+</matches>
+
+</exercise>-->
+
+
+<!--<exercise xml:id="matching5">
+        <title>Normal Distribution Matching Problem</title>
+        <statement>
+        <p>
+            Problem instructions.
+        </p>
+        </statement>
+    
+     <matches>
+
+        <match>
+            <premise>
+                D
+            </premise>
+            <response>
+                <p>
+                    Find the probability for a standard normal distribution: <m>P(Z \lt 2.35)</m>
+                    </p>
+            </response>
+        </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+                Find the probability for a standard normal distribution: <m>P(Z \gt 2.35)</m>
+                </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+                Find the probability for a standard normal distribution: <m>P(-0.86\leq Z\leq 1.76)</m>
+                </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            image
+        </premise>
+        <response>
+            <p>
+            NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    <match>
+        <premise>
+            <p>
+            image
+            </p>
+        </premise>
+        <response>
+            <p>
+            1-NORM.S.DIST(1.5,TRUE)
+            </p>
+        </response>
+    </match>
+
+    </matches>
+
+</exercise>-->
+
+
+
+
+
+        <exercise>
+            <statement>
+                <p> Let <m>Z</m> be the standard normal variable. </p>
+              <p> Find <m>P(Z\geq -2.89)</m>.  Round your answer to four decimal places: </p>
+              <p>
+                <var />
+              </p>
+            </statement>
+            <setup>
+              <var>
+          
+              <condition number="0.9981" tolerance="0.0001">
+              <feedback>
+                <p>
+                  Any value in the interval <m>0.9981\pm 0.0001</m> is marked as correct for this problem.
+                </p>
+              </feedback>
+              </condition>
+              <condition string=".*">
+              <feedback>
+                <p>
+                  Incorrect.
+                  Did you round to four decimal places?
+                </p>
+              </feedback>
+              </condition>
+              </var>
+            </setup>
+          </exercise> 
+
+
+
+          <exercise>
+            <statement>
+                <p> Let <m>z</m> be the standard normal variable. </p>
+              <p> Find <m>P(0.11\lt Z\lt 2.7)</m>.  Round your answer to four decimal places: </p>
+              <p>
+                <var />
+              </p>
+            </statement>
+            <setup>
+              <var>
+          
+              <condition number="0.4527" tolerance="0.0001">
+              <feedback>
+                <p>
+                  Any value in the interval <m>0.4527\pm 0.0001</m> is marked as correct for this problem.
+                </p>
+              </feedback>
+              </condition>
+              <condition string=".*">
+              <feedback>
+                <p>
+                  Incorrect.
+                  Did you round to four decimal places?
+                </p>
+              </feedback>
+              </condition>
+              </var>
+            </setup>
+          </exercise> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <subsection xml:id="subsection-normal-inv">
+    <title>Finding <m>Z</m> or <m>X</m> if we have information about a probability:</title>
+
+    <introduction>
+    <p>
+        What if we want to know the specific <m>X</m> that satisfies a given probability?  Then we can work backward using the tables (<url href="https://www.math.arizona.edu/~rsims/ma464/standardnormaltable.pdf">Standard Normal Table</url>) and use the <m>z</m>-score formula in reverse.  If the exact probability cannot be found in the table, then we can use the closest values.
+    </p>
+
+</introduction>
+
+    <p>
+        The Excel formulas that apply to this situation are similar to the ones we saw earlier, replacing .DIST with .INV:
+        <ul>
+            <li>
+                <p>
+                    NORM.INV(probability, mean, standard deviation) applies to normal distributions with a specified mean and standard deviation
+                </p>
+            </li>
+            <li>
+                <p>
+                    NORM.S.INV(probability) is used for standard normal distributions
+                </p>
+            </li>
+        </ul>
+    </p>
+
+
+
+
+
+    <exercise>
+        <statement>
+            <p> Let <m>z</m> be the standard normal variable. </p>
+          <p> Find <m>z^*</m> such that <m>P(Z\leq z^*)=0.61</m>.  Round your answer to four decimal places: </p>
+          <p>
+            <var />
+          </p>
+        </statement>
+        <setup>
+          <var>
+      
+          <condition number="0.2793" tolerance="0.0001">
+          <feedback>
+            <p>
+              Any value in the interval <m>0.2793\pm 0.0001</m> is marked as correct for this problem.
+            </p>
+          </feedback>
+          </condition>
+          <condition string=".*">
+          <feedback>
+            <p>
+              Incorrect.
+              Did you round to four decimal places?
+            </p>
+          </feedback>
+          </condition>
+          </var>
+        </setup>
+      </exercise> 
+
+
+
+
+      <exercise>
+        <statement>
+            <p> Let <m>z</m> be the standard normal variable. </p>
+          <p> Find <m>z^*</m> such that <m>P(-z^*\lt Z\lt z^*)=0.69</m>.  Round your answer to four decimal places: </p>
+          <p>
+            <var />
+          </p>
+        </statement>
+        <setup>
+          <var>
+      
+          <condition number="0.2793" tolerance="0.0001">
+          <feedback>
+            <p>
+              Any value in the interval <m>1.0152\pm 0.0001</m> is marked as correct for this problem.
+            </p>
+          </feedback>
+          </condition>
+          <condition string=".*">
+          <feedback>
+            <p>
+              Incorrect.
+              Did you round to four decimal places?
+            </p>
+          </feedback>
+          </condition>
+          </var>
+        </setup>
+      </exercise> 
+
+      
+
+    <exercise>
+        <introduction>
+            <p>
+                A random variable follows the normal probability distribution with a mean of 50 and a standard deviation of 20.
+            </p>
+        </introduction>
+            <task>
+                <statement>
+                    <p>
+                        What value of <m>X</m> represents the 75th percentile?
+                    </p>
+                </statement>
+                <answer>
+                    <p>
+                       <m> NORM.INV(0.75,50,20)\approx 63.49</m>
+                    </p>
+                </answer>
+            </task>
+            
+        <task>
+            <statement>
+                <p>
+                    Find the value of <m>X</m> so that <m>40\%</m> probability lies below it.
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>NORM.INV(0.40,50,20)\approx 44.93</m>
+                </p>
+            </answer>
+        </task>
+        
+        <task>
+            <statement>
+                <p>
+                    Find the value of <m>X</m> that represents the highest <m>10\%</m> of all values
+                </p>
+            </statement>
+            <answer>
+                <p>
+                    <m>NORM.DIST(0.90,50,20)\approx 75.63</m>
+                </p>
+            </answer>
+        </task>
+        
+    </exercise>
+
+
+
+
+
+
+
+    <exercise>
+        <introduction>
+          <p> Suppose the retirement age of professional athletes in a certain league is normally distributed with mean <m>32.27</m> years and standard deviation <m>3.62</m> years. Find the following: </p>
+        </introduction>
+          <task>
+            <statement>
+              <p> Find the probability that a randomly selected athlete's retirement age is is at least <m>30.15</m> years. </p>
+            </statement>
+            <answer>
+              <p> <m>P(X\geq 30.15)\approx 0.7209397092241314</m>. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find the probability that a randomly selected athlete's retirement age is between <m>30.33</m> and <m>39.65</m> years. </p>
+            </statement>
+            <answer>
+              <p> <m>P(30.33\lt X\lt 39.65)\approx 0.6832488917348373</m>. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find <m>X^*</m> such that the probability that a randomly selected athlete's retirement age is is at most <m>X^*</m> years is <m>68\%</m>. </p>
+            </statement>
+            <answer>
+              <p> If <m>P(X\leq X^*)=68\%</m> then <m>X\approx 33.96306965279452</m> years. </p>
+            </answer>
+          </task>
+          <task>
+            <statement>
+              <p> Find <m>k</m> such that the probability that a randomly selected athlete's retirement age is between <m>32.27-k</m> years and <m>32.27+k</m> years is <m>42\%</m>. </p>
+            </statement>
+            <answer>
+              <p> If <m>P(32.27-k\lt X\lt 32.27+k)=42\%</m> then <m>k\approx 2.0032526847915357</m> years. </p>
+            </answer>
+          </task>
+      </exercise>
+
+
+
+      <exercise>
+        <myopenmath problem="803116" />
+      </exercise>
+
+
+    </subsection>
+
+
+
+
+</section>
+
+

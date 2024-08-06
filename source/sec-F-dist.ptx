@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-F-dist" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The <m>F</m>-Distribution</title>
+
+  <introduction>
+
+ 
+
+
+    <figure xml:id="figure-geogebra-F-dist">
+        <caption><m>F</m>-Distribution (Made in GeoGebra by therimalaya and Lauren Nelsen)</caption>
+        <interactive xml:id="geogebra-F-dist" geogebra="wxaeghfh" aspect="9:5" />
+      </figure>
+
+<investigation xml:id="def-F-dist">
+    <statement>
+        <p>
+            The <m>F</m>-Distribution is defined as the ratio of variances of two populations normally distributed.  It is unique in that it depends on two degrees of freedom:  <m>D_1</m> and <m>D_2</m>.  The other key properties of the <m>F</m>-distribution:
+
+        </p>
+    </statement>
+
+    <task>
+        <statement>
+            <p>
+                The <m>F</m>-distribution curves are not symmetric, but instead .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        positively skewed
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        negatively skewed
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                As the degrees of freedom increase, the skewness of the curve .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        decreases
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        increases
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        stays the same
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+    <task>
+        <statement>
+            <p>
+                The area under the curve is equal to .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        1
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        0
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        5
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+    <task>
+        <statement>
+            <p>
+                All values of the <m>F</m>-distribution are greater than or equal to .....
+            </p>
+        </statement>
+        <choices>
+            <choice correct="yes">
+                <statement>
+                    <p>
+                        0
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        1
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        5
+                    </p>
+                </statement>
+            </choice>
+            <choice correct="no">
+                <statement>
+                    <p>
+                        -1
+                    </p>
+                </statement>
+            </choice>
+        
+        </choices>
+    </task>
+
+
+
+</investigation>
+
+
+
+
+
+
+</introduction>
+
+
+  <p>
+    We can use Table 6 in Appendix A of your book to find critical <m>F</m> values.  The notation for these is <m>F_{\alpha,D_1,D_2}</m>.
+    <ol>
+      <li>
+        <p>
+          Find the table with the desired significance level.
+        </p>
+      </li>
+      <li>
+        <p>
+          Locate <m>D_1</m> across the <em>top</em> of the table.
+        </p>
+      </li>
+      <li>
+        <p>
+            Locate <m>D_2</m> along the <em>left</em> of the table.
+
+        </p>
+      </li>
+    </ol>
+  </p>
+
+  <p>
+    We can also find critical <m>F</m>-values using the Excel command
+    <me>F.INV.RT</me>
+  </p>
+
+
+  <exercise>
+    <introduction>
+        <p>
+            Find the following critical <m>F</m>-values:
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                <m>F_{0.10,12,20}</m>
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\approx 1.892</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>F_{0.10,20,12}</m>
+
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\approx 2.060</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>F_{0.05,7,5}</m>
+
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\approx 4.876</m>
+            </p>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                <m>F_{0.01,24,15}</m>
+
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <m>\approx 3.294</m>
+            </p>
+        </answer>
+    </task>
+  </exercise>
+
+
+</section>

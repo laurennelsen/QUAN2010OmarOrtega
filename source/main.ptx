@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+
+  <book xml:id="QUAN_2010_Notes">
+    <title>QUAN 2010 Notes</title>
+    <subtitle>Introduction to Business Statistics</subtitle>
+
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+
+    <!-- Include chapters -->
+  <xi:include href="./ch-Intro-to-Bus-Stats.ptx" />
+
+
+     <xi:include href="./ch-Displaying-Data.ptx" />
+    
+    <xi:include href="./ch-Descriptive-Statistics.ptx" />
+
+    <xi:include href="./ch-Probability.ptx" />
+
+
+    <xi:include href="./ch-Discrete-Probability-Distributions.ptx" />
+
+
+    <xi:include href="./ch-Intro-Sampling.ptx" />
+
+
+<xi:include href="./ch-Continuous-Probability-Distributions.ptx" />
+
+    <xi:include href="./ch-Sampling-Distributions.ptx" />
+
+    <xi:include href="./ch-Confidence-Intervals.ptx" />
+
+    <xi:include href="./ch-Hypothesis-Testing-Single-Pop.ptx" />
+
+    <xi:include href="./ch-Hypothesis-Variance.ptx" />
+
+    <xi:include href="./ch-Hypothesis-Testing-Two-Populations.ptx" />
+
+
+
+    <xi:include href="./ch-Intro-to-Regression-Modeling.ptx" />
+
+
+    <!-- Include backmatter -->
+    <xi:include href="./backmatter.ptx" />
+
+  </book>
+</pretext>

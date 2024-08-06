@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Intro-to-Regression-Modeling" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Regression Modeling</title>
+
+  <introduction>
+   
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-correlation.ptx" />
+  <xi:include href="sec-developing-regression-model.ptx" />
+  <xi:include href="sec-using-regression.ptx" />
+  <xi:include href="sec-Diamonds.ptx" />
+
+</chapter>

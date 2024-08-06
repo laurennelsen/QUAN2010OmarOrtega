@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-two-means-independent" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Comparing Two Means with Independent Samples</title>
+
+<introduction>
+    <p>
+        In this section, we study two-sample hypothesis tests and confidence intervals.  First, we will assume that the standard deviation, <m>\sigma</m>, is known.  Then we will look at the more realistic case where <m>\sigma</m> is unknown.
+    </p>
+</introduction>
+
+
+<definition xml:id="def-difference-means-independent">
+    <statement>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        The <em>sampling distribution for the difference in means</em> is normal given normal populations or large samples (<m>n\geq 30</m>).  The mean of this sampling distribution is
+                        <me>\mu_{\overline{x}_1-\overline{x}_2}=\mu_{\overline{x}_1}-\mu_{\overline{x}_2}.</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <em>standard error</em> for this sampling distribution is
+                        <me>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}.</me>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        The <em>test statistic</em> for a hypothesis test comparing the difference between two means with independent samples and known standard deviations is defined by:
+                        <me>z_{\overline{x}} = \frac{(\overline{x}_1 - \overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sigma_{\overline{x}_1 - \overline{x}_2}},</me>
+                    
+                    where 
+
+                    <tabular>
+                        <row>
+                            <cell><m>(\mu_1-\mu_2)_{H_0}</m></cell> <cell>=</cell><cell>the hypothesized difference in population means</cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell> (defined by the null hypothesis)</cell>
+                        </row>
+                        <row>
+                            <cell><m>\sigma_{\overline{x}_1-\overline{x}_2}</m></cell> <cell>=</cell> <cell>the standard error for the difference between the</cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell>  two means</cell>
+                        </row>
+                        <row>
+                            <cell><m>\overline{x}_1-\overline{x}_2</m></cell> <cell>=</cell> <cell>the difference in sample means between</cell>
+                        </row>
+                        <row>
+                            <cell></cell>
+                            <cell></cell>
+                            <cell> Populations 1 and 2</cell>
+                        </row>
+                    </tabular>
+                </p>
+                </li>
+            </ul>
+        </p>
+    </statement>
+</definition>
+
+
+
+<p>
+    This formula is a little unwieldy so whenever we are dealing with raw data (not just summary statistics), we will use Excel to do all the time-consuming calculations.
+</p>
+
+<p> Now let's demonstrate the two ways we can perform this type of hypothesis test.  First, in <xref ref="ex-two-means-hand"/> we will complete the hypothesis test by hand, manually computing all of the required calculations.  Then in <xref ref="ex-two-means-Excel"/>> we will rely on Excel to do the calculations.  After stating the two hypotheses, we will navigate to the <em>Data Analysis</em> tool and choose <em>z-Test Two-Sample for Means</em> to complete the test.
+</p>
+
+
+<exercise xml:id="ex-two-means-hand">
+    <statement>
+        <p>
+            (Donnelly 10.7)
+        </p>
+        <p>
+            Suppose the Bureau of Labor Statistics would like to investigate if the average retirement age for a worker in Japan is higher than the average retirement age for a worker in the United States.  A random sample of 30 retired U.S. workers had an average retirement age of 64.6 years.  A random sample of 30 retired Japanese workers had an average retirement age of 67.5 years.  Assume the population standard deviation for the retirement age in the U.S. is 4.0 years and for Japan is 4.5 years.  Perform a hypothesis test using <m>\alpha=0.05</m> to determine if the average retirement age in Japan is higher than it is in the United States. 
+            
+
+        </p>
+    </statement>
+    <answer>
+        <p>
+            Population 1 = average retirement age in Japan
+        </p>
+        <p>
+            Population 2 = average retirement age in US
+        </p>
+        <p>
+            <m>\alpha=0.05,\; n_1=n_2=30,\; \overline{x}_1=67.5,\; \overline{x}_2=64.6,\; \sigma_1=4.5,\; \sigma_2=4.0</m>
+        </p>
+        <p>
+            <m>H_0: \; \mu_1-\mu_2\leq 0</m>
+        </p>
+        <p>
+            <m>H_1: \; \mu_1-\mu_2\gt 0</m>
+        </p>
+        <p>
+            critical value: <m>NORM.S.INV(0.95)\approx 1.645</m>
+        </p>
+        <p>
+            standard error: <m>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{(4.5)^2}{30}+\frac{(4.0)^2}{30}}\approx 1.0992</m>
+        </p>
+        <p>
+            test statistic: <m>z_{\overline{x}}\approx \frac{(67.5-64.6)-0}{1.0992}\approx 2.64</m>
+        </p>
+        <p>
+            Since the test statistic is bigger than the critical value and this is a right-tail test, we reject <m>H_0</m>.
+        </p>
+        <p>
+            There is enough evidence to conclude that the average retirement age in Japan is higher than in the USA.
+        </p>
+    </answer>
+</exercise>
+
+<exercise xml:id="ex-two-means-Excel">
+
+    <statement>
+        <p>
+            (Donnelly Your Turn 1)
+        </p>
+        <p>
+            Major League Baseball officials (and many fans) have been concerned about the lengths of games, particularly playoff games.  Suppose the officials would like to test the hypothesis that the mean length of a playoff game is longer than the mean length of a regular season game.  The data in the Excel file below shows the length of games, in minutes, for randomly selected games from the regular season and from the playoffs.  Assume the standard deviations of the playoff and regular season games are 25 and 21 minutes respectively.  Using <m>\alpha = 0.02</m>, can we conclude that playoff games are longer, on average, than regular season games?
+
+
+        </p>
+        <p>
+            <url href="external/sheets/MLBGames.xlsx" />
+
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <url href="external/sheets/MLBGamesSolution.xlsx" />
+        </p>
+        <p>
+            The sample provides enough evidence to conclude that the average length of playoff games is longer than the average length of regular season games.
+        </p>
+    </answer>
+</exercise>
+
+
+<definition xml:id="def-confidence-two-means-known-sd">
+    <statement>
+        <p>
+            The formula for the <em>confidence interval</em> for the difference between two means given known standard deviations is
+            <me> ( \overline{x}_1-\overline{x}_2 ) \pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</me>
+            where again
+            <tabular>
+                <row>
+                    <cell><m>\sigma_{\overline{x}_1-\overline{x}_2}</m></cell>
+                    <cell><m>=</m></cell>
+                    <cell>the standard error for the difference between two means</cell>
+                </row>
+                <row>
+                    <cell><m>\overline{x}_1-\overline{x}_2</m></cell>
+                    <cell><m>=</m></cell>
+                    <cell>the difference in sample means between Populations 1 and 2</cell>
+                </row>
+            </tabular>
+        </p>
+        <p>
+            Remember that the book likes to identify the two sides of the interval as LCL (lower confidence limit) and UCL (upper confidence limit).
+        </p>
+    </statement>
+</definition>
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly 10.9)
+        </p>
+        <p>
+            Expedia.com would like to estimate the difference between the average rental price of a car with automatic transmission versus the average rental price of a car with manual transmission at a certain airport.  The table below shows the average one-week rental prices for two random samples, as well as the population standard deviations and sample sizes for each type of car.
+        </p>
+        <p>
+            <tabular>
+                <row header="yes">
+                    <cell> </cell>
+                    <cell>Sample mean</cell>
+                    <cell>Sample size</cell>
+                    <cell>Population standard deviation</cell>
+                </row>
+                <row header="yes">
+                    <cell>Automatic</cell>
+                    <cell><m>\$ 411.30</m></cell>
+                    <cell><m>52</m></cell>
+                    <cell><m>\$ 23</m></cell>
+                </row>
+                <row header="yes">
+                    <cell>Manual</cell>
+                    <cell><m>\$ 372.80</m></cell>
+                    <cell><m>36</m></cell>
+                    <cell><m>\$ 27</m></cell>
+                </row>
+            </tabular>
+        </p>
+        <p>
+            Construct a <m>90 \%</m> confidence interval to estimate the difference in the average cost of a one-week rental between these two types of cars at the airport.  Can you conclude that a difference exists in the average rental price of the two types of cars?
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        Population 1:  automatic
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Population 2:  manual
+                    </p>
+                </li>
+            </ul>
+            Formula:  <me>(\overline{x}_1-\overline{x}_2)\pm z_{\alpha/2}\cdot \sigma_{\overline{x}_1-\overline{x}_2}</me>
+        </p>
+        <p>
+            Standard error:  <me>\sigma_{\overline{x}_1-\overline{x}_2}=\sqrt{\frac{23^2}{52}+\frac{27^2}{36}}\approx 5.5157</me>
+        </p>
+        <p>
+            <me>z_{\alpha/2}=NORM.S.INV(0.95)\approx 1.645</me>
+        </p>
+        <p>
+            MOE:  <me>\approx 1.645(5.5157)\approx 9.0733</me>
+        </p>
+        <p>
+            LCL: <me>\approx (411.30-372.80)-9.0733=29.4267</me>
+        </p>
+        <p>
+            UCL: <me>\approx (411.30-372.80)+9.0733=47.5733</me>
+        </p>
+        <p>
+            We are <m>90\%</m> confident that
+            <me>29.43\lt \mu_1-\mu_2\lt 47.57.</me>
+        </p>
+        <p>
+            Since the interval does not contain 0, we can conclude that there is a difference in the average cost of a rental with different transmissions.
+        </p>
+    </answer>
+</exercise>
+
+
+<p>
+    When we don't know the population standard deviations, we substitute the sample standard deviations in their place.  Recall from <xref ref="sec-Confidence-Interval-for-Mean-Sigma-Unknown"/> that this means the proper sampling distribution is the Student's <m>t</m>-distribution instead of the normal distribution (as long as the sample sizes are large and/or the samples are drawn from normal populations).
+</p>
+
+<p>
+    In addition, we also need to determine whether or not to assume that the unknown variances are equal or unequal.  We could use the <m>F</m>-test from <xref ref="ch-Hypothesis-Variance"/> to draw this conclusion -- but most of the time (in this class) you will be told which situation applies.  Let's examine the formulas associated with each of these two cases.
+</p>
+
+
+<p>
+    <ul>
+        <li>
+            <p>
+                <em>Case 1:  The population variances are not equal</em>, i.e., <m>\sigma_1^2\neq \sigma_2^2</m>
+            </p>
+            <p>
+                The test statistic and confidence interval formulas are
+                <me>t_{\overline{x}}=\frac{(\overline{x}_1-\overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\;\;\;\;\;\;\; (\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}</me>
+                where
+            </p>
+            <p>
+                <tabular>
+                    <row>
+                        <cell><m>(\mu_1-\mu_2)_{H_0}</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the hypothesized difference in population means (defined by the null hypothesis)</cell>
+                    </row>
+                    <row>
+                        <cell><m>\overline{x}_1-\overline{x}_2</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the difference in sample means between Populations 1 and 2</cell>
+                    </row>
+                    <row>
+                        <cell><m>s_1^2, n_1</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the variance and size, respectively, of the sample from Population 1</cell>
+                    </row>
+                    <row>
+                        <cell><m>s_2^2, n_2</m></cell>
+                        <cell><m>=</m></cell>
+                        <cell>the variance and size, respectively, of the sample from Population 2</cell>
+                    </row>
+                </tabular>
+            </p>
+            <p>
+                The test statistic, <m>t_{\overline{x}}</m>, has degrees of freedom, <m>df</m>, defined by the following formula:
+                <me>df = \frac{\left( \frac{s_1^2}{n_1}+\frac{s_2^2}{n_2} \right)^2}{\frac{\left(\frac{s_1^2}{n_1}\right)^2}{n_1-1}+\frac{\left(\frac{s_2^2}{n_2}\right)^2}{n_2-1}}</me>
+            </p>
+            <p>
+                This looks messy, but note that you've already computed <m>\frac{s_1^2}{n_1}</m> and <m>\frac{s_2^2}{n_2}</m> during the test statistic calculation!
+            </p>
+        </li>
+        <li>
+            <p>
+                <em>Case 2:  The population variances are equal</em>, i.e. <m>\sigma_1^2=\sigma_2^2</m>
+            </p>
+            <p>
+                In this scenario, the denominator of the test statistic (which recall from Case 1 includes the sample variances) gets simplified because we can pool the two sample variances.
+            </p>
+            <p>
+                The test statistic and confidence interval formulas are:
+                <me>t_{\overline{x}}=\frac{(\overline{x}_1-\overline{x}_2)-(\mu_1-\mu_2)_{H_0}}{\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}\;\;\;\;\;\;\; (\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}</me>
+            </p>
+            <p>
+                The <em>pooled variance</em>, <m>s_p^2</m>, is the weighted average of 2 sample variances drawn from 2 populations.
+            </p>
+            <p>
+                This formula is actually quite easy to use:
+                <me>s_p^2 = \frac{(n_1-1)s_1^2+(n_2-1)s_2^2}{(n_1-1)+(n_2-1)}</me>
+            </p>
+            <p>
+                The test statistic, <m>t_{\overline{x}}</m>, has degrees of freedom, <m>df=n_1+n_2-2</m>.
+            </p>
+        </li>
+    </ul>
+</p>
+
+
+<p>
+    Once again, we will rely on Excel to do these computations for us whenever we have raw data.  After stating the two hypotheses, go to the <em>Data Analysis</em> tool and choose <q><em>t-Test Two-Sample Assuming Equal Variances</em></q> or <q><em>t-Test Two-Sample Assuming Unequal Variances</em></q> to complete the test.
+</p>
+
+
+
+<exercise>
+    <statement>
+        <p>
+            (Donnelly 10.52)
+        </p>
+        <p>
+            The airline industry measures fuel efficiency by calculating how many miles one seat can travel, whether occupied or not, on one gallon of jet fuel.  The data in the Excel file below shows the fuel economy, in miles per seat, for 15 randomly selected flights on Delta and US Airways.  Perform a hypothesis test using <m>\alpha=0.05</m> to determine if the average fuel efficiency differs between the two airlines.  Assume the population variances for the fuel efficiency for these two airlines are not equal.
+        </p>
+        <p>
+            <url href="external/sheets/FuelEfficiency.xlsx" />
+
+        </p>
+    </statement>
+    <answer>
+        <p>
+            <url href="external/sheets/FuelEfficiencySolution.xlsx" />
+        </p>
+    </answer>
+</exercise>
+
+
+
+<exercise>
+    <introduction>
+        <p>
+            (Donnelly 10.45)
+        </p>
+        <p>
+            During a decline in the housing market in the 2010s, it appeared that the average size of a newly-constructed house fell.  To investigate this trend, the square footages of a random sample of houses built in 2008 were compared to houses in 2018.  The following table summarizes the sample means and standard deviations for the two samples drawn in 2008 and 2018.  Assume that the population variances for the square footages of houses built in these two years are equal.
+        </p>
+        <p>
+            <tabular>
+                <row header="yes">
+                    <cell></cell>
+                    <cell>2008</cell>
+                    <cell>2018</cell>
+                </row>
+                <row header="no">
+                    <cell>Sample mean</cell>
+                    <cell>2,462.3</cell>
+                    <cell>2,257.0</cell>
+                </row>
+                <row header="no">
+                    <cell>Sample standard deviation</cell>
+                    <cell>760.8</cell>
+                    <cell>730.2</cell>
+                </row>
+                <row header="no">
+                    <cell>Sample size</cell>
+                    <cell>45</cell>
+                    <cell>40</cell>
+                </row>
+            </tabular>
+        </p>
+    </introduction>
+    <task>
+        <statement>
+            <p>
+                Using <m>\alpha=0.05</m>, perform a hypothesis test to determine if the average home constructed in 2008 was larger than a home built in 2018.
+            </p>
+        </statement>
+        <answer>
+            <statement>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                Population 1:  2008
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Population 2:  2018
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <tabular>
+                        <row>
+                            <cell><m>H_0:</m></cell>
+                            <cell><m>\mu_1-\mu_2=0</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>H_1:</m></cell>
+                            <cell><m>\mu_1-\mu_2\gt 0</m></cell>
+                        </row>
+                    </tabular>
+                </p>
+                <p>
+                    <m>\alpha=0.05,\;\;\; df=45+40-2=83</m>
+                </p>
+                <p>
+                    <me>s_p^2 = \frac{(44)(578,816.64)+(39)(533,192.04)}{44+39}\approx 557,378.5749</me>
+                </p>
+                <p>
+                    test statistic: <m>t_{\overline{x}}=\frac{2462.3-2257-0}{\sqrt{557,378.5749\left( \frac{1}{45}+\frac{1}{40} \right)}}\approx 1.2654</m>
+                </p>
+                <p>
+                    <me>\text{p-value}=T.DIST.RT(1.2654,83)\approx 0.1046</me>
+                </p>
+                <p>
+                    Since the p-value is bigger than <m>\alpha</m> (and <m>t_{\overline{x}}</m> is not in the rejection region), we fail to reject <m>H_0</m>.
+                </p>
+                <p>
+                    There is not enough evidence to conclude that the average size of a newly constructed house fell in 2018 compared to 2008.
+                </p>
+            </statement>
+        </answer>
+    </task>
+    <task>
+        <statement>
+            <p>
+                Construct a <m>95\%</m> confidence interval to estimate the average difference in the square footages of new homes constructed in these two years. 
+            </p>
+        </statement>
+        <answer>
+            <p>
+                <me>T.INV.2T(0.05,83)\approx 1.9889,</me> 
+                so the critical values are approximately <m>-1.9889</m> and <m>1.9889</m>.
+            </p>
+            <p>
+                Formula for confidence interval:
+                <me>(\overline{x}_1-\overline{x}_2)\pm t_{\alpha/2}\cdot\sqrt{s_p^2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}</me>
+            </p>
+            <p>
+                Margin of error:  <me>\approx 1.9899\sqrt{557,378.5749\left(\frac{1}{45}+\frac{1}{40}\right)}\approx 322.8</me>
+            </p>
+            <p>
+                LCL: <me>\approx (2462.3-2257)-322.8=-117.5</me>
+            </p>
+            <p>
+                UCL: <me>\approx (2462.3-2257)+322.8=528.1</me>
+            </p>
+            <p>
+                We are <m>95\%</m> confident that 
+                <me>-117.5\lt \mu_1-\mu_2\lt 528.1</me>
+            </p>
+        </answer>
+    </task>
+</exercise>
+
+<exercise>
+    <introduction>
+    <p>
+    A statistics student wants to verify the claim that in a certain Fortune 500 company the average salary of female employees is different from the average salary of male employees. Two samples of male and female workers were obtained independently and analyzed.  The sample data is in the Excel file below.  (Assume that the samples are from normal populations.)
+    </p>
+
+    <p>
+    <url href="external/sheets/CompanySalaries.xlsx" />
+    </p>
+    </introduction>
+
+    <task>
+      <statement>
+        <p>
+          Which of the samples has a larger mean?
+        </p>
+      </statement>
+      <answer>
+        <p>
+            The sample of men's salaries has a larger mean than the sample of women's salaries.  (The sample mean women's salary is about <m>\$ 57,200</m>, and the sample mean men's salary is about <m>\$ 69,338</m>.)
+        </p>
+      </answer>
+    </task>
+    <task>
+      <statement>
+        <p>
+          Is there sufficient evidence to conclude that male employees in this company have higher salaries than female employees?
+        </p>
+      </statement>
+      <answer>
+        <p>
+            Population 1: women
+        </p>
+        <p>
+            Population 2: men
+        </p>
+        <p>
+            (Let's use <m>\alpha=0.10</m>.)
+        </p>
+        <p>
+            <m>H_0: \; \mu_1 - \mu_2 \geq 0</m>
+        </p>
+        <p>
+            <m>H_1: \; \mu_1 - \mu_2 \lt 0</m>
+        </p>
+        <p>
+            <url href="external/sheets/CompanySalariesSolution.xlsx" />
+        </p>
+        <p>
+            No, there is not sufficient evidence to conclude that male employees in this company have higher salaries than female employees because we got a p-value of <m>\approx 0.4182</m>, which is bigger than <m>\alpha</m>.
+        </p>
+      </answer>
+    </task>
+
+    </exercise>
+
+  </section>

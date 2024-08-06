@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-Descriptive-Statistics" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Descriptive Statistics</title>
+
+  <introduction>
+    <p> In this chapter, we'll learn how to compute descriptive statistics such as the <em>mean</em> and <em>standard deviation</em> both by hand and with Excel. </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-measures-central-tendency.ptx" />
+
+  <xi:include href="sec-measures-variability.ptx" />
+
+  <xi:include href="sec-mean-and-stdev.ptx" />
+
+  <xi:include href="sec-measures-relative-position.ptx" />
+
+  <xi:include href="sec-measures-association.ptx" />
+
+
+</chapter>
