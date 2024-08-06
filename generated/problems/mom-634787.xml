@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="634787">
+<statement>
+<p>A movie theater company wants to see if there is a difference in the variance of movie ticket sales in Philadelphia and Cincinnati per week. They sample 17 sales from Philadelphia (group 1) and 18 sales from Cincinnati (group 2) and count the number of tickets sold over a week. Test the claim using a significance level of <m>\displaystyle\alpha</m> =0.05. Assume that movie sales are normally distributed.</p>
+<table><tabular> <row><cell>Philadelphia</cell><cell>Cincinnati</cell></row><row><cell>650</cell><cell>653</cell></row><row><cell>652</cell><cell>674</cell></row><row><cell>660</cell><cell>629</cell></row><row><cell>647</cell><cell>640</cell></row><row><cell>657</cell><cell>655</cell></row><row><cell>657</cell><cell>637</cell></row><row><cell>652</cell><cell>657</cell></row><row><cell>655</cell><cell>662</cell></row><row><cell>647</cell><cell>651</cell></row><row><cell>646</cell><cell>651</cell></row><row><cell>650</cell><cell>638</cell></row><row><cell>656</cell><cell>643</cell></row><row><cell>643</cell><cell>655</cell></row><row><cell>653</cell><cell>654</cell></row><row><cell>657</cell><cell>659</cell></row><row><cell>663</cell><cell>648</cell></row><row><cell>657</cell><cell>676</cell></row><row><cell></cell><cell>649</cell></row></tabular></table>
+<p>What are the correct hypotheses? Note this may view better in full screen mode. Select the correct symbols in the order they appear in the problem.
+  </p>
+<p>
+  <m>{H}_{0}</m>: </p>
+<p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
+<li>μd</li> 
+<li>σ<ampersand />;<hash/>8321</li> 
+<li>s<ampersand />;<hash/>8321</li> 
+<li>μ<ampersand />;<hash/>8321</li> 
+<li>p<ampersand />;<hash/>8321</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
+<li><less/><less/>/label<greater/></li> 
+<li>=</li> 
+<li>≠</li> 
+<li>≥</li> 
+<li><greater/></li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand />;<hash/>8322</li> 
+<li>μ<ampersand />;<hash/>8322</li> 
+<li>s<ampersand />;<hash/>8322</li> 
+<li>0</li> 
+<li>σ<ampersand />;<hash/>8322</li> 
+<li>p<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
+</ol></p>
+  <p>
+  <m>{H}_{1}</m>: </p>
+<p><ol style="list-style-type:upper-alpha"><li>s<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
+<li>x̅<ampersand />;<hash/>8321</li> 
+<li>p<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321</li> 
+<li>μ<ampersand />;<hash/>8321</li> 
+<li>μd</li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
+<li>≠</li> 
+<li><less/><less/>/label<greater/></li> 
+<li>≥</li> 
+<li>=</li> 
+<li><greater/></li> 
+</ol></p>
+ <p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand />;<hash/>8322</li> 
+<li>p<ampersand />;<hash/>8322</li> 
+<li>μ<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
+<li>s<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322</li> 
+<li>0</li> 
+</ol></p>
+  <p>
+  Based on the hypotheses, compute the following:</p>
+<p>Round answers to at least 4 decimal places.
+  </p>
+<p>
+  The test statistic is = <fillin characters="10" /></p>
+<p>The left tail critical value is = <fillin characters="10" /></p>
+<p>The right-tail critical value is = <fillin characters="10" /></p>
+<p>The decision is to </p>
+<p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis</li> 
+<li>Fail to reject the null hypothesis</li> 
+<li>Accept the alternative hypothesis</li> 
+<li>Reject the claim</li> 
+</ol></p>
+.
+<p>The correct summary would be: </p>
+<p><ol style="list-style-type:upper-alpha"><li>There is enough evidence to reject the claim</li> 
+<li>There is not enough evidence to reject the claim</li> 
+<li>There is enough evidence to support the claim</li> 
+<li>There is not enough evidence to support the claim</li> 
+</ol></p>
+ that there is a difference in the variance of movie ticket sales in Philadelphia and Cincinnati per week.
+
+
+</statement>
+<solution>
+<p><ul><li>B: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>C: =</li><li>G: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>B: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>B: ≠</li><li>D: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>0.2019</li><li>0.3652</li><li>2.6968</li><li>A: Reject the null hypothesis</li><li>C: There is enough evidence to support the claim</li></ul></p>
+</solution>
+</myopenmath>
+

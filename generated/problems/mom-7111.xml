@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="7111">
+<statement>
+<p>
+Suppose that 20<percent/> of people own dogs.  If you pick two people at random, what is the probability that they both own a dog?</p>
+<p>
+Give your answer as a decimal (to at least 3 places) or fraction</p>
+<p><fillin characters="20" />Preview Question 1   </p>
+
+
+</statement>
+<solution>
+<p><ul><li>0.04</li></ul></p>
+</solution>
+</myopenmath>
+
