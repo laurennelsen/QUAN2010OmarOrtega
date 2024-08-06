@@ -6,7 +6,7 @@
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <titlepage>
     <author>
-      <personname>Lauren M. Nelsen and Kimberly Swetz</personname>
+      <personname>Omar Ortega</personname>
       <department>College of Business</department>
       <institution>University of Colorado Colorado Springs</institution>
     </author>
@@ -17,9 +17,9 @@
 
   <colophon>
 
-    <website>
+    <!--<website>
       <url href="https://sites.google.com/view/laurennelsen">Lauren's Website</url>
-    </website>
+    </website>-->
 
     <copyright>
       <year>2020<ndash />2024</year>
