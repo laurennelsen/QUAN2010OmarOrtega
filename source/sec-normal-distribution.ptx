@@ -1570,10 +1570,15 @@ There are many examples of random variables that are normally distributed in man
 
 
 
-      <exercise>
-        <myopenmath problem="803116" />
-      </exercise>
 
+      <exercises component="web-only-exercises">
+
+        <exercise>
+          <myopenmath problem="803116" />
+        </exercise>
+  
+        </exercises>
+  
 
     </subsection>
 
