@@ -475,7 +475,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Measures of Central Tendency",
-  "body": " Measures of Central Tendency   In statistics, average or typical values are known as measures of central tendency .     The mean ( or ) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.     The mean is the sum of the data items divided by the number of items: where represents the sum of all the data items and represents the numbef of items.     The mean of a sample is symbolized by .    The mean of an entire population is symbolized by .        The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the mean earnings, in millions of dollars, for the ten highest-earning actors.    million dollars     The median is the value in the data set for which half of the observations are higher and half are lower.       To find the median of a group of data items,   Arrange the data items in order, from smallest to largest.    If the number of data items is odd, the median is the data item in the middle of the list.    If the number of data items is even, the median is the mean of the two middle data items.      Find the median for each of the following groups of data:       data items in order:   median:        data items in order:   median:     The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the median earnings, in millions of dollars, for the ten highest-earning actors.  Is the median different thant the mean you found in , and if so, why?    The median is less than the mean that we found in .    Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)     Right-skewed       Symmetric       Left-skewed       How are the mean and median related to each other in each of the following frequency distribution shapes?   symmetric   the mean and median are approximately equal   left-skewed   the median is greater than the mean; potential low outliers pull the mean left   right-skewed   the median is less than the mean; potential high outliers pull the mean right   Statisticians generally use the median instead of the mean when reporting income. Why do you think this is?   Five employees in the assembly section of a television manufacturing company earn salaries of and annually. The section manager has an annual salary of .   Find the median annual salary for the six people.       Find the mean annual salary for the six people.         An outlier is a value that is much higher or lower than most of the data.  (We'll have a more formal\/specific definition of an outlier later.)      The mode is the data value that occurs most often in a data set. If more than one data value has the highest frequency, then each of these data values is a mode. If there is no data value that occurs most often, then the data set has no mode.      If a dataset is bimodal if it has two modes.     Find the mode for each of the following groups of data:   7, 2, 4, 7, 8, 10   mode: 7   2, 1, 4, 5, 3   There is no mode since no number occurs more than once.   3, 3, 4, 5, 6, 6   The modes are 3 and 6. (The data set is bimodal .)    Consider the following data values: Calculate the mean, median, and mode, and then describe the shape of the distribution.      data items in order:      modes:   The distribution is left-skewed.    The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.      Calculate the mean, median, and mode(s) (using Excel).      mean:     median:     modes:       Describe the shape of the distribution.   The distribution is left-skewed.   "
+  "body": " Measures of Central Tendency   In statistics, average or typical values are known as measures of central tendency .     The mean ( or ) is the most common measure of central tendency and is calculated by summing all the data points and dividing by the size of the data set.     The mean is the sum of the data items divided by the number of items: where represents the sum of all the data items and represents the numbef of items.     The mean of a sample is symbolized by .    The mean of an entire population is symbolized by .        The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the mean earnings, in millions of dollars, for the ten highest-earning actors.    million dollars     The median is the value in the data set for which half of the observations are higher and half are lower.       To find the median of a group of data items,   Arrange the data items in order, from smallest to largest.    If the number of data items is odd, the median is the data item in the middle of the list.    If the number of data items is even, the median is the mean of the two middle data items.      Find the median for each of the following groups of data:       data items in order:   median:        data items in order:   median:     The Excel file below has the earnings for the top 10 highest paid actors in 2023. (The data is taken from Yahoo .)     Find the median earnings, in millions of dollars, for the ten highest-earning actors.  Is the median different thant the mean you found in , and if so, why?    The median is less than the mean that we found in .    Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)     Left-skewed       Symmetric       Right-skewed       How are the mean and median related to each other in each of the following frequency distribution shapes?   symmetric   the mean and median are approximately equal   left-skewed   the median is greater than the mean; potential low outliers pull the mean left   right-skewed   the median is less than the mean; potential high outliers pull the mean right   Statisticians generally use the median instead of the mean when reporting income. Why do you think this is?   Five employees in the assembly section of a television manufacturing company earn salaries of and annually. The section manager has an annual salary of .   Find the median annual salary for the six people.       Find the mean annual salary for the six people.         An outlier is a value that is much higher or lower than most of the data.  (We'll have a more formal\/specific definition of an outlier later.)      The mode is the data value that occurs most often in a data set. If more than one data value has the highest frequency, then each of these data values is a mode. If there is no data value that occurs most often, then the data set has no mode.      If a dataset is bimodal if it has two modes.     Find the mode for each of the following groups of data:   7, 2, 4, 7, 8, 10   mode: 7   2, 1, 4, 5, 3   There is no mode since no number occurs more than once.   3, 3, 4, 5, 6, 6   The modes are 3 and 6. (The data set is bimodal .)    Consider the following data values: Calculate the mean, median, and mode, and then describe the shape of the distribution.      data items in order:      modes:   The distribution is left-skewed.    The data in the Excel file below lists daily Dow Jones Industrial Average values from June 2019 through May 2024.      Calculate the mean, median, and mode(s) (using Excel).      mean:     median:     modes:       Describe the shape of the distribution.   The distribution is left-skewed.   "
 },
 {
   "id": "def-mean",
@@ -532,13 +532,13 @@ var ptx_lunr_docs = [
   "body": " Skewed Distribution, Mean, and Median (Made in GeoGebra by Casper Buisman)   "
 },
 {
-  "id": "fig-right-skew",
+  "id": "fig-left-skew",
   "level": "2",
-  "url": "sec-measures-central-tendency.html#fig-right-skew",
+  "url": "sec-measures-central-tendency.html#fig-left-skew",
   "type": "Figure",
   "number": "3.1.7",
   "title": "",
-  "body": " Right-skewed     "
+  "body": " Left-skewed     "
 },
 {
   "id": "fig-symmetric",
@@ -550,13 +550,13 @@ var ptx_lunr_docs = [
   "body": " Symmetric     "
 },
 {
-  "id": "fig-left-skew",
+  "id": "fig-right-skew",
   "level": "2",
-  "url": "sec-measures-central-tendency.html#fig-left-skew",
+  "url": "sec-measures-central-tendency.html#fig-right-skew",
   "type": "Figure",
   "number": "3.1.9",
   "title": "",
-  "body": " Left-skewed     "
+  "body": " Right-skewed     "
 },
 {
   "id": "ex-skew",

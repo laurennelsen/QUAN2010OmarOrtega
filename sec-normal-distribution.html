@@ -110,15 +110,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.3.3';
+eBookConfig.runestone_version = '7.4.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runtime.740db250e511e1cc.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.9813637ef2f0e0ee.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-347.f9add1ca35d5ad93.css">
-<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.3.3/prefix-runestone.f64dcc3632d7a0c3.css">
+<script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.0/prefix-runtime.00db6230172ad960.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.0/prefix-347.8328b60515045466.bundle.js"></script><script type="text/javascript" src="https://runestone.academy/cdn/runestone/7.4.0/prefix-runestone.04737dc219c2d2eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.0/prefix-347.f9add1ca35d5ad93.css">
+<link rel="stylesheet" type="text/css" href="https://runestone.academy/cdn/runestone/7.4.0/prefix-runestone.f64dcc3632d7a0c3.css">
 <style>
 #subsec-grouped-quantitative-data-9-4-1 { counter-set: subsec-grouped-quantitative-data-9-4-1 0; }
 #subsec-grouped-quantitative-data-9-4-1 > li::marker { content: ""counter(subsec-grouped-quantitative-data-9-4-1,decimal)"."; }
@@ -416,12 +416,17 @@ f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-0.5[(x-\mu)/\sigma]^2}
 <span class="type">Question</span><span class="space"> </span><span class="codenumber">7.1.2</span><span class="period">.</span>
 </h3></summary><article class="question example-like knowl__content"><div class="para" id="sec-normal-distribution-5-1-1">How does changing the standard deviation (<span class="process-math">\(\sigma\)</span>) and the mean (<span class="process-math">\(\mu\)</span>) change the curve? <figure class="figure figure-like" id="sec-normal-distribution-5-1-1-3"><iframe src="https://www.desmos.com/calculator/jxzs8fz9qr" id="desmos-normal" width="600" height="450"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.3<span class="period">.</span></span><span class="space"> </span>Graph of Normal Distribution powered by Desmos</figcaption></figure>
 </div>
-<div class="solutions"><details id="sec-normal-distribution-5-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="sec-normal-distribution-5-2-1"><ul class="disc" id="sec-normal-distribution-5-2-1-1">
+<div class="answer solution-like" id="sec-normal-distribution-5-2">
+<h3 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="sec-normal-distribution-5-2-1"><ul class="disc" id="sec-normal-distribution-5-2-1-1">
 <li id="sec-normal-distribution-5-2-1-1-1"><div class="para" id="sec-normal-distribution-5-2-1-1-1-1">
 <span class="process-math">\(\sigma:\)</span> controls the “spread” of the curve.  Larger <span class="process-math">\(\sigma\)</span> results in a flatter, more spread out curve</div></li>
 <li id="sec-normal-distribution-5-2-1-1-2"><div class="para" id="sec-normal-distribution-5-2-1-1-2-1">
 <span class="process-math">\(\mu:\)</span> controls the location of the center.  Larger <span class="process-math">\(\mu\)</span> shifts the “hill” of the curve to the right</div></li>
-</ul></div></div></details></div></article></details><section class="subsection" id="subsection-characteristics-of-normal-distn"><h3 class="heading hide-type">
+</ul></div>
+</div></article></details><section class="subsection" id="subsection-characteristics-of-normal-distn"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">7.1.1</span><span class="space"> </span><span class="title">Characteristics of the Normal Probability Distribution:</span>
 </h3>
 <div class="para logical" id="subsection-characteristics-of-normal-distn-2"><ol class="decimal" id="subsection-characteristics-of-normal-distn-2-1">
@@ -511,14 +516,19 @@ z=\frac{10.00-7.50}{1.25} = 2
 <div class="para" id="subsection-calculating-probabilities-normal-5"><details id="subsection-calculating-probabilities-normal-5-1" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.1.10</span><span class="period">.</span>
 </h4></summary><article class="example example-like knowl__content"><div class="para" id="subsection-calculating-probabilities-normal-5-1-1-1">Find the probability <span class="process-math">\(P(Z\leq -1.3)\)</span> for a standard normal distribution</div>
-<div class="solutions"><details id="subsection-calculating-probabilities-normal-5-1-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsection-calculating-probabilities-normal-5-1-2-1">
+<div class="answer solution-like" id="subsection-calculating-probabilities-normal-5-1-2">
+<h4 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="subsection-calculating-probabilities-normal-5-1-2-1">
 <div class="para">In Excel:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 =NORM.S.DIST(-1.3,1)\approx 0.0968 
 \end{equation*}
 </div>
-</div></div></details></div></article></details></div>
+</div>
+</div></article></details></div>
 <div class="para" id="subsection-calculating-probabilities-normal-6">So how do we use the table or the Excel formula to find any probability for a normal distribution?</div>
 <div class="para logical" id="subsection-calculating-probabilities-normal-7">
 <div class="para">There are 3 basic types of problems:</div>
@@ -533,32 +543,47 @@ z=\frac{10.00-7.50}{1.25} = 2
 </h4></summary><article class="example example-like knowl__content"><div class="introduction" id="subsection-calculating-probabilities-normal-8-1"><div class="para" id="subsection-calculating-probabilities-normal-8-1-1">Find the following probabilities for a standard normal distribution:</div></div>
 <article class="task exercise-like" id="subsection-calculating-probabilities-normal-8-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
 <div class="para" id="subsection-calculating-probabilities-normal-8-2-1-1"><span class="process-math">\(P(Z\lt-0.5)\)</span></div>
-<div class="solutions"><details id="subsection-calculating-probabilities-normal-8-2-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsection-calculating-probabilities-normal-8-2-2-1">
+<div class="answer solution-like" id="subsection-calculating-probabilities-normal-8-2-2">
+<h5 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsection-calculating-probabilities-normal-8-2-2-1">
 <div class="para">In Excel:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 = NORM.S.DIST(-0.5,TRUE) \approx 0.3085 
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="task exercise-like" id="subsection-calculating-probabilities-normal-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+</div>
+</div></article><article class="task exercise-like" id="subsection-calculating-probabilities-normal-8-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
 <div class="para" id="subsection-calculating-probabilities-normal-8-3-1-1"><span class="process-math">\(P(Z\gt 2.1)\)</span></div>
-<div class="solutions"><details id="subsection-calculating-probabilities-normal-8-3-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsection-calculating-probabilities-normal-8-3-2-1">
+<div class="answer solution-like" id="subsection-calculating-probabilities-normal-8-3-2">
+<h5 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsection-calculating-probabilities-normal-8-3-2-1">
 <div class="para">In Excel:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 = 1-NORM.S.DIST(2.1,TRUE)\approx 0.0179 
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="task exercise-like" id="subsection-calculating-probabilities-normal-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+</div>
+</div></article><article class="task exercise-like" id="subsection-calculating-probabilities-normal-8-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
 <div class="para" id="subsection-calculating-probabilities-normal-8-4-1-1"><span class="process-math">\(P(0.2\leq Z\leq 2.7)\)</span></div>
-<div class="solutions"><details id="subsection-calculating-probabilities-normal-8-4-2" class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="para logical" id="subsection-calculating-probabilities-normal-8-4-2-1">
+<div class="answer solution-like" id="subsection-calculating-probabilities-normal-8-4-2">
+<h5 class="heading">
+<span class="type">Answer</span><span class="period">.</span>
+</h5>
+<div class="para logical" id="subsection-calculating-probabilities-normal-8-4-2-1">
 <div class="para">In Excel:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 = NORM.S.DIST(2.7,TRUE) - NORM.S.DIST(0.2,TRUE) \approx 0.4173 
 \end{equation*}
 </div>
-</div></div></details></div></article></article></details><figure class="figure figure-like" id="figure-geogebra-normal-probability"><iframe src="https://www.geogebra.org/material/iframe/id/KzkYq4Bt/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-normal" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.12<span class="period">.</span></span><span class="space"> </span>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</figcaption></figure></section><div class="para logical" id="sec-normal-distribution-10">
+</div>
+</div></article></article></details><figure class="figure figure-like" id="figure-geogebra-normal-probability"><iframe src="https://www.geogebra.org/material/iframe/id/KzkYq4Bt/width/800/height/444/border/888888/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" id="geogebra-normal" width="600" height="333"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">7.1.12<span class="period">.</span></span><span class="space"> </span>Normal Distribution Probability Calculator (Made in GeoGebra by Andreas Lindner)</figcaption></figure></section><div class="para logical" id="sec-normal-distribution-10">
 <div class="para">We already saw an Excel command that will allow us to find a probability associated with a standard normal distribution.  There is also an Excel command that allows us to find a probability associated with a general normal distribution, and in this case, we will need to specify the mean and standard deviation of the distribution. (These first two commands both apply to situations where the goal is to compute a probability associated with a data value.)</div>
 <ul class="disc" id="sec-normal-distribution-10-1">
 <li id="sec-normal-distribution-10-1-1"><div class="para" id="sec-normal-distribution-10-1-1-1">
@@ -767,7 +792,7 @@ P(Z\geq 1.50)
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Exercises</span>
 </h4>
 <article class="exercise exercise-like" id="subsection-normal-inv-8-1"><h5 class="heading"><span class="codenumber">1<span class="period">.</span></span></h5>
-<div id="momid12wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momid12" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=803116&amp;frame_id=momid12"></iframe></div></article></section></section></section></div>
+<div id="momsubsection-normal-inv-8-1-1wrap" style="width:100%;overflow:visible;position:relative"><iframe id="momsubsection-normal-inv-8-1-1" style="position:absolute;z-index:1;object-fit: contain; width: 100%" frameborder="0" data-knowl-callback="sendResizeRequest" src="https://www.myopenmath.com/embedq2.php?id=803116&amp;frame_id=momsubsection-normal-inv-8-1-1"></iframe></div></article></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-Continuous-Probability-Distributions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-exponential-distribution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
