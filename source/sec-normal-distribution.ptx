@@ -8,7 +8,7 @@
     </introduction>
 
 
-    <exercise>
+    <exercise label="ContinuousDistMatching">
         <title>Continuous Probability Distribution Matching Problem</title>
         <statement>
         <p>
