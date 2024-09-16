@@ -25,7 +25,7 @@
         <response>
             <p>
                 Useful when data tends to fall in the center and extreme values are rare
-                </p>
+            </p>
         </response>
     </match>
     
@@ -47,7 +47,7 @@
       <response>
           <p>
               Useful when data of all values have an equal chance of occurring
-              </p>
+          </p>
       </response>
     </match>
     
