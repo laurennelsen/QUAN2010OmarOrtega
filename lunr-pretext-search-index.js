@@ -2422,9 +2422,9 @@ var ptx_lunr_docs = [
   "body": "     The rejection region is the range of values for a test statistic that cause us to reject .    A critical value is the boundary that separates the rejection region from the rest.    A p-value is the probability of observing a sample statistic at least as extreme as the one selected, assuming is true.      "
 },
 {
-  "id": "sec-nuts-bolts-hyp-testing-5",
+  "id": "tails",
   "level": "2",
-  "url": "sec-nuts-bolts-hyp-testing.html#sec-nuts-bolts-hyp-testing-5",
+  "url": "sec-nuts-bolts-hyp-testing.html#tails",
   "type": "Exercise",
   "number": "10.2.3",
   "title": "",
