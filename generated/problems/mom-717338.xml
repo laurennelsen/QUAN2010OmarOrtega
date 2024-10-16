@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="717338">
 <statement>
-<p>Adriana is conducting market research on the amount typically spent on the purchase of a first vehicle. Adriana has determined that the average cost of a first vehicle is <dollar/>6700, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>650.
+<p>Madelaine is conducting market research on the amount typically spent on the purchase of a first vehicle. Madelaine has determined that the average cost of a first vehicle is <dollar/>5200, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>670.
   </p>
 <p>
-  a. Find the probability that a single randomly selected first-time vehicle purchase is more than <dollar/>5820. (Round to 4 decimal places.)</p>
+  a. Find the probability that a single randomly selected first-time vehicle purchase is less than <dollar/>5720. (Round to 4 decimal places.)</p>
 <p style="padding-left: 40px;"><fillin characters="10" /></p>
-<p>b. The cost of the middle 40<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 50<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="10" /> to <dollar/><fillin characters="10" /></p>
-<p>c. If a random sample of 55 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>6650 and <dollar/>6870? (Round to 4 decimal places.)</p>
+<p>c. If a random sample of 70 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>5160 and <dollar/>5360? (Round to 4 decimal places.)</p>
 <p style="padding-left: 40px;"><fillin characters="10" /></p>
 
 </statement>
 <solution>
-<p><ul><li>0.9121</li><li>6359</li><li>7041</li><li>0.6896</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{>}{5820}\right)}=\text{normaldist}{\left({6700},{650}\right)}.\text{cdf}{\left({5820},\infty\right)}={0.9121}</m> </p>
-<p>b. To find the cutoff values for the middle <m>\displaystyle{40}\%</m>  of the distribution, need the remaining <m>\displaystyle{1}-{0.4}={0.6}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.3, and the area to the <em>right</em> of the upper bound is 0.3, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.7. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
-<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({6700},{650}\right)}.\text{inversecdf}{\left({0.3}\right)}={6359}</m> </p>
-<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({6700},{650}\right)}.\text{inversecdf}{\left({0.7}\right)}={7041}</m> </p>
+<p><ul><li>0.7812</li><li>4748</li><li>5652</li><li>0.6684</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{<}{5720}\right)}=\text{normaldist}{\left({5200},{670}\right)}.\text{cdf}{\left(-\infty,{5720}\right)}={0.7812}</m> </p>
+<p>b. To find the cutoff values for the middle <m>\displaystyle{50}\%</m>  of the distribution, need the remaining <m>\displaystyle{1}-{0.5}={0.5}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.25, and the area to the <em>right</em> of the upper bound is 0.25, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.75. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
+<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({5200},{670}\right)}.\text{inversecdf}{\left({0.25}\right)}={4748}</m> </p>
+<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({5200},{670}\right)}.\text{inversecdf}{\left({0.75}\right)}={5652}</m> </p>
 <p>c. The probability here is related to <m>\displaystyle\overline{{X}}</m> , so now we use the sampling disitribution of means to find the probability (NOT the underlying <m>\displaystyle{X}</m> distribution):</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({6650}{<}\overline{{x}}{<}{6870}\right)}=\text{normaldist}{\left({6700},\frac{{650}}{\sqrt{{{55}}}}\right)}.\text{cdf}{\left({6650},{6870}\right)}={0.6896}</m> </p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({5160}{<}\overline{{x}}{<}{5360}\right)}=\text{normaldist}{\left({5200},\frac{{670}}{\sqrt{{{70}}}}\right)}.\text{cdf}{\left({5160},{5360}\right)}={0.6684}</m> </p>
 <p><em>NOTE:</em> each instance of normaldist<m>\displaystyle{\left(\mu,\sigma\right)}</m> above could be replaced by first defining the distribution with a variable name. E.g.:</p>
 <p><ul>
-  <li><m>\displaystyle{N}=\text{normaldist}{\left({6700},{650}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
-  <li> <m>\displaystyle{S}=\text{normaldist}{\left({6700},\frac{{650}}{\sqrt{{{55}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
+  <li><m>\displaystyle{N}=\text{normaldist}{\left({5200},{670}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
+  <li> <m>\displaystyle{S}=\text{normaldist}{\left({5200},\frac{{670}}{\sqrt{{{70}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
 </ul></p>
 </solution>
 </myopenmath>
