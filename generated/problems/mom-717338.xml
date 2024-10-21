@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="717338">
 <statement>
-<p>Daran is conducting market research on the amount typically spent on the purchase of a first vehicle. Daran has determined that the average cost of a first vehicle is <dollar/>6100, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>680.
+<p>Trent is conducting market research on the amount typically spent on the purchase of a first vehicle. Trent has determined that the average cost of a first vehicle is <dollar/>5100, and that the distribution of costs is normally distributed with a standard deviation of <dollar/>760.
   </p>
 <p>
-  a. Find the probability that a single randomly selected first-time vehicle purchase is more than <dollar/>6750. (Round to 4 decimal places.)</p>
+  a. Find the probability that a single randomly selected first-time vehicle purchase is more than <dollar/>6300. (Round to 4 decimal places.)</p>
 <p style="padding-left: 40px;"><fillin characters="10" /></p>
-<p>b. The cost of the middle 70<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
+<p>b. The cost of the middle 80<percent/> of first-time vehicle purchases falls between (round to the nearest dollar):</p>
 <p style="padding-left: 40px;"><dollar/><fillin characters="10" /> to <dollar/><fillin characters="10" /></p>
-<p>c. If a random sample of 45 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>6030 and <dollar/>6270? (Round to 4 decimal places.)</p>
+<p>c. If a random sample of 45 first-time vehicle purchasers is selected, what is the probability that the <em>sample average</em> amount spent is between <dollar/>5060 and <dollar/>5340? (Round to 4 decimal places.)</p>
 <p style="padding-left: 40px;"><fillin characters="10" /></p>
 
 </statement>
 <solution>
-<p><ul><li>0.1696</li><li>5395</li><li>6805</li><li>0.7083</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{>}{6750}\right)}=\text{normaldist}{\left({6100},{680}\right)}.\text{cdf}{\left({6750},\infty\right)}={0.1696}</m> </p>
-<p>b. To find the cutoff values for the middle <m>\displaystyle{70}\%</m>  of the distribution, need the remaining <m>\displaystyle{1}-{0.7}={0.3}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.15, and the area to the <em>right</em> of the upper bound is 0.15, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.85. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
-<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({6100},{680}\right)}.\text{inversecdf}{\left({0.15}\right)}={5395}</m> </p>
-<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({6100},{680}\right)}.\text{inversecdf}{\left({0.85}\right)}={6805}</m> </p>
+<p><ul><li>0.0572</li><li>4126</li><li>6074</li><li>0.6209</li></ul></p><p>a. Since the probability here is for a single randomly selected individiual, we use the <m>\displaystyle{X}</m> distribution, which has mean and standard deviation as given. Using Desmos (or other technology), we need:</p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({x}{>}{6300}\right)}=\text{normaldist}{\left({5100},{760}\right)}.\text{cdf}{\left({6300},\infty\right)}={0.0572}</m> </p>
+<p>b. To find the cutoff values for the middle <m>\displaystyle{80}\%</m>  of the distribution, need the remaining <m>\displaystyle{1}-{0.8}={0.2}</m> of the area to be split between the 2 tails. This means that the area to the <em>left</em> of the lower bound is 0.1, and the area to the <em>right</em> of the upper bound is 0.1, resulting in an area <em>to the <em>left</em></em> of the upper bound of 0.9. In Desmos (or other technology), we find each of these values using .inversecdf with the <m>\displaystyle{X}</m> distribution:</p>
+<p style="padding-left: 40px;">lower bound <m>\displaystyle=\text{normaldist}{\left({5100},{760}\right)}.\text{inversecdf}{\left({0.1}\right)}={4126}</m> </p>
+<p style="padding-left: 40px;">upper bound <m>\displaystyle=\text{normaldist}{\left({5100},{760}\right)}.\text{inversecdf}{\left({0.9}\right)}={6074}</m> </p>
 <p>c. The probability here is related to <m>\displaystyle\overline{{X}}</m> , so now we use the sampling disitribution of means to find the probability (NOT the underlying <m>\displaystyle{X}</m> distribution):</p>
-<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({6030}{<}\overline{{x}}{<}{6270}\right)}=\text{normaldist}{\left({6100},\frac{{680}}{\sqrt{{{45}}}}\right)}.\text{cdf}{\left({6030},{6270}\right)}={0.7083}</m> </p>
+<p style="padding-left: 40px;"><m>\displaystyle{P}{\left({5060}{<}\overline{{x}}{<}{5340}\right)}=\text{normaldist}{\left({5100},\frac{{760}}{\sqrt{{{45}}}}\right)}.\text{cdf}{\left({5060},{5340}\right)}={0.6209}</m> </p>
 <p><em>NOTE:</em> each instance of normaldist<m>\displaystyle{\left(\mu,\sigma\right)}</m> above could be replaced by first defining the distribution with a variable name. E.g.:</p>
 <p><ul>
-  <li><m>\displaystyle{N}=\text{normaldist}{\left({6100},{680}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
-  <li> <m>\displaystyle{S}=\text{normaldist}{\left({6100},\frac{{680}}{\sqrt{{{45}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
+  <li><m>\displaystyle{N}=\text{normaldist}{\left({5100},{760}\right)}</m> for the <m>\displaystyle{X}</m> distribution</li>
+  <li> <m>\displaystyle{S}=\text{normaldist}{\left({5100},\frac{{760}}{\sqrt{{{45}}}}\right)}</m> for the <m>\displaystyle\overline{{X}}</m> distribution</li>
 </ul></p>
 </solution>
 </myopenmath>
