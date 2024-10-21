@@ -4,7 +4,7 @@
 <p>
 Is this value from a discrete or continuous data set.</p>
 <p>
-The average rainfall in July in inches</p>
+The number of classes you are taking this quarter</p>
 <p><ol style="list-style-type:upper-alpha"><li>Discrete</li> 
 <li>Continuous</li> 
 </ol></p>
@@ -12,7 +12,7 @@ The average rainfall in July in inches</p>
 
 </statement>
 <solution>
-<p><ul><li>B: Continuous</li></ul></p>
+<p><ul><li>A: Discrete</li></ul></p>
 </solution>
 </myopenmath>
 
