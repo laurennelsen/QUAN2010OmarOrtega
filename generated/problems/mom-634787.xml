@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <myopenmath xmlns:pi="http://pretextbook.org/2020/pretext/internal" id="634787">
 <statement>
-<p>A movie theater company wants to see if there is a difference in the variance of movie ticket sales in Denver and Cleveland per week. They sample 17 sales from Denver (group 1) and 25 sales from Cleveland (group 2) and count the number of tickets sold over a week. Test the claim using a significance level of <m>\displaystyle\alpha</m> =0.05. Assume that movie sales are normally distributed.</p>
-<table><tabular> <row><cell>Denver</cell><cell>Cleveland</cell></row><row><cell>736</cell><cell>766</cell></row><row><cell>750</cell><cell>753</cell></row><row><cell>749</cell><cell>756</cell></row><row><cell>776</cell><cell>775</cell></row><row><cell>742</cell><cell>751</cell></row><row><cell>749</cell><cell>746</cell></row><row><cell>730</cell><cell>753</cell></row><row><cell>743</cell><cell>733</cell></row><row><cell>759</cell><cell>722</cell></row><row><cell>774</cell><cell>746</cell></row><row><cell>743</cell><cell>730</cell></row><row><cell>776</cell><cell>732</cell></row><row><cell>751</cell><cell>755</cell></row><row><cell>755</cell><cell>759</cell></row><row><cell>742</cell><cell>734</cell></row><row><cell>733</cell><cell>753</cell></row><row><cell>748</cell><cell>755</cell></row><row><cell></cell><cell>774</cell></row><row><cell></cell><cell>716</cell></row><row><cell></cell><cell>775</cell></row><row><cell></cell><cell>741</cell></row><row><cell></cell><cell>753</cell></row><row><cell></cell><cell>750</cell></row><row><cell></cell><cell>752</cell></row><row><cell></cell><cell>764</cell></row></tabular></table>
+<p>A movie theater company wants to see if there is a difference in the variance of movie ticket sales in Oklahoma City and Atlanta per week. They sample 15 sales from Oklahoma City (group 1) and 20 sales from Atlanta (group 2) and count the number of tickets sold over a week. Test the claim using a significance level of <m>\displaystyle\alpha</m> =0.05. Assume that movie sales are normally distributed.</p>
+<table><tabular> <row><cell>Oklahoma City</cell><cell>Atlanta</cell></row><row><cell>607</cell><cell>602</cell></row><row><cell>589</cell><cell>598</cell></row><row><cell>593</cell><cell>596</cell></row><row><cell>603</cell><cell>601</cell></row><row><cell>606</cell><cell>598</cell></row><row><cell>622</cell><cell>613</cell></row><row><cell>597</cell><cell>607</cell></row><row><cell>608</cell><cell>595</cell></row><row><cell>598</cell><cell>604</cell></row><row><cell>603</cell><cell>606</cell></row><row><cell>597</cell><cell>603</cell></row><row><cell>606</cell><cell>606</cell></row><row><cell>600</cell><cell>603</cell></row><row><cell>602</cell><cell>601</cell></row><row><cell>601</cell><cell>610</cell></row><row><cell></cell><cell>611</cell></row><row><cell></cell><cell>599</cell></row><row><cell></cell><cell>600</cell></row><row><cell></cell><cell>587</cell></row><row><cell></cell><cell>606</cell></row></tabular></table>
 <p>What are the correct hypotheses? Note this may view better in full screen mode. Select the correct symbols in the order they appear in the problem.
   </p>
 <p>
   <m>{H}_{0}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
-<li>μ<ampersand />;<hash/>8321</li> 
-<li>μd</li> 
+<p><ol style="list-style-type:upper-alpha"><li>σ<ampersand />;<hash/>8321</li> 
 <li>x̅<ampersand />;<hash/>8321</li> 
-<li>p<ampersand />;<hash/>8321</li> 
-<li>σ<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
 <li>s<ampersand />;<hash/>8321</li> 
+<li>μ<ampersand />;<hash/>8321</li> 
+<li>p<ampersand />;<hash/>8321</li> 
+<li>μd</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li><greater/></li> 
-<li>=</li> 
-<li>≠</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
 <li><less/><less/>/label<greater/></li> 
 <li>≥</li> 
-<li>≤</li> 
+<li>=</li> 
+<li><greater/></li> 
+<li>≠</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand />;<hash/>8322</li> 
-<li>0</li> 
-<li>p<ampersand />;<hash/>8322</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>p<ampersand />;<hash/>8322</li> 
 <li>s<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322</li> 
+<li>0</li> 
 <li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
 <li>μ<ampersand />;<hash/>8322</li> 
 <li>x̅<ampersand />;<hash/>8322</li> 
 </ol></p>
   <p>
   <m>{H}_{1}</m>: </p>
-<p><ol style="list-style-type:upper-alpha"><li>σ<ampersand />;<hash/>8321</li> 
-<li>μ<ampersand />;<hash/>8321</li> 
+<p><ol style="list-style-type:upper-alpha"><li>x̅<ampersand />;<hash/>8321</li> 
 <li>s<ampersand />;<hash/>8321</li> 
-<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
-<li>x̅<ampersand />;<hash/>8321</li> 
+<li>μ<ampersand />;<hash/>8321</li> 
 <li>p<ampersand />;<hash/>8321</li> 
+<li>σ<ampersand />;<hash/>8321<ampersand />;sup2</li> 
 <li>μd</li> 
+<li>σ<ampersand />;<hash/>8321</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li><less/><less/>/label<greater/></li> 
-<li>=</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>≤</li> 
 <li><greater/></li> 
+<li><less/><less/>/label<greater/></li> 
 <li>≠</li> 
 <li>≥</li> 
-<li>≤</li> 
+<li>=</li> 
 </ol></p>
- <p><ol style="list-style-type:upper-alpha"><li>μ<ampersand />;<hash/>8322</li> 
+ <p><ol style="list-style-type:upper-alpha"><li>σ<ampersand />;<hash/>8322</li> 
 <li>s<ampersand />;<hash/>8322</li> 
-<li>0</li> 
-<li>p<ampersand />;<hash/>8322</li> 
-<li>σ<ampersand />;<hash/>8322</li> 
-<li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
 <li>x̅<ampersand />;<hash/>8322</li> 
+<li>p<ampersand />;<hash/>8322</li> 
+<li>μ<ampersand />;<hash/>8322</li> 
+<li>σ<ampersand />;<hash/>8322<ampersand />;sup2</li> 
+<li>0</li> 
 </ol></p>
   <p>
   Based on the hypotheses, compute the following:</p>
@@ -64,24 +64,24 @@
 <p>The left tail critical value is = <fillin characters="10" /></p>
 <p>The right-tail critical value is = <fillin characters="10" /></p>
 <p>The decision is to </p>
-<p><ol style="list-style-type:upper-alpha"><li>Reject the null hypothesis</li> 
-<li>Fail to reject the null hypothesis</li> 
+<p><ol style="list-style-type:upper-alpha"><li>Fail to reject the null hypothesis</li> 
 <li>Reject the claim</li> 
+<li>Reject the null hypothesis</li> 
 <li>Accept the alternative hypothesis</li> 
 </ol></p>
 .
 <p>The correct summary would be: </p>
 <p><ol style="list-style-type:upper-alpha"><li>There is not enough evidence to reject the claim</li> 
-<li>There is enough evidence to support the claim</li> 
 <li>There is not enough evidence to support the claim</li> 
+<li>There is enough evidence to support the claim</li> 
 <li>There is enough evidence to reject the claim</li> 
 </ol></p>
- that there is a difference in the variance of movie ticket sales in Denver and Cleveland per week.
+ that there is a difference in the variance of movie ticket sales in Oklahoma City and Atlanta per week.
 
 
 </statement>
 <solution>
-<p><ul><li>A: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>B: =</li><li>E: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>D: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>D: ≠</li><li>F: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>0.8137</li><li>0.3809</li><li>2.4105</li><li>B: Fail to reject the null hypothesis</li><li>C: There is not enough evidence to support the claim</li></ul></p>
+<p><ul><li>C: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>D: =</li><li>E: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>E: σ<ampersand />;<hash/>8321<ampersand />;sup2</li><li>D: ≠</li><li>F: σ<ampersand />;<hash/>8322<ampersand />;sup2</li><li>1.5811</li><li>0.3496</li><li>2.6469</li><li>A: Fail to reject the null hypothesis</li><li>B: There is not enough evidence to support the claim</li></ul></p>
 </solution>
 </myopenmath>
 
